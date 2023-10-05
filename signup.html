@@ -17,6 +17,9 @@
         .mont1{
             font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire page */
         }
+        .pop1{
+          font-family: 'Poppins';
+        }
         .justcolor{
             color: #79AC78;
         }
@@ -57,11 +60,11 @@
         }
     </style>
 </head>
-<body>
+<body class="mont1">
     <nav class="navbar navbar-expand-lg navbar-light bg-light mont1">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img  src="assets/VolCon.png"> <!-- Replace "your-logo.png" with your actual logo image -->
-            Sign Up
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,7 +75,7 @@
                     <a class="nav-link" href="#">Activity</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="aboutus.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Settings</a>
@@ -86,6 +89,13 @@
             <a class="nav-item nav-link" href="#">
                 <i class="fas fa-user"></i> <!-- Profile icon -->
             </a>
+            <li class="nav-item nav-link ml-auto navbar-collapse">
+              <a href="login.html" style="text-decoration: none; color: inherit;" class="">Log In</a>
+              &nbsp;&nbsp;
+            </li>
+            <li class="nav-item nav-link ml-auto navbar-collapse">
+              <a href="signup.html" style="text-decoration: none; color: inherit;">Sign In</a>
+            </li>
         </div>
     </nav>
 
@@ -97,7 +107,7 @@
                
                     <div class="card-body p-5 text-center">
           
-                      <h3 class="mb-5" style=>Sign Up</h3>
+                      <h3 class="mb-5" style= "font-weight: bolder;">Sign In</h3>
           
                       <div class="form-outline mb-4">
                         <input type="email" id="typeEmailX-2" style="background-color: #F1F1F5;" placeholder="Enter Email" class="form-control form-control-lg" />
