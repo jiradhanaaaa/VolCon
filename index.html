@@ -28,7 +28,9 @@
             height: auto;
             margin-right: 10px; /* Adjust the margin as needed */
         }
-
+        .bgcolorfornav{
+          background-color: #A0BA9F;
+        }
         .navbar-nav .nav-link {
             position: relative;
             padding-bottom: 10px;
@@ -60,11 +62,10 @@
         }
     </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mont1">
+<body class="mont1">
+    <nav class="navbar navbar-expand-lg navbar-light bgcolorfornav mont1" >
         <a class="navbar-brand" href="#">
-            <img  src="assets/VolCon.png"> <!-- Replace "your-logo.png" with your actual logo image -->
-            <a href="login.html">Log In</a>
+            <img  src="assets/VolCon.png"> 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,53 +76,182 @@
                     <a class="nav-link" href="#">Activity</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="aboutus.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Settings</a>
                 </li>
             </ul>
         </div>
-        <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">
-                <i class="fas fa-search"></i> <!-- Search icon -->
-            </a>
-            <a class="nav-item nav-link" href="#">
-                <i class="fas fa-user"></i> <!-- Profile icon -->
-            </a>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">
+            <i class="fas fa-search"></i> <!-- Search icon -->
+        </a>
+        <a class="nav-item nav-link" href="#">
+            <i class="fas fa-user"></i> <!-- Profile icon -->
+        </a> &nbsp;&nbsp;
+        <li class="nav-item nav-link ml-auto navbar-collapse">
+          <a href="login.html" style="text-decoration: none; color: inherit;" class="">Log In</a>
+          &nbsp;&nbsp;
+        </li>
+        <li class="nav-item nav-link ml-auto navbar-collapse">
+          <a href="signup.html" style="text-decoration: none; color: inherit;">Sign In</a>
+        </li>
         </div>
     </nav>
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <br><br><br><br>
-          <h1 class="display-4 .mont1" style="font-weight: bold;">Volunteer<br>Connect</h1><br>
-          <p class="lead" style="font-weight:150px;">Volunteer Connect is a web platform dedicated to facilitating volunteer opportunities,<br>connecting individuals with meaningful causes in their communities.<br>It streamlines the volunteer process, making it easier for<br>people to find and engage in rewarding volunteer work.</p>
+          <div class="row">
+        
+          <div class="col-md-8">
+            <br><br>
+          <h1 class="display-4 .mont1" style="font-weight: bold; color: #FAF1E4;">VOLUNTEER<br>CONNECT</h1><br>
+          <p class="lead" style="font-weight:semi-bold; color: #FAF1E4;">Volunteer Connect is a web platform dedicated to facilitating volunteer opportunities, connecting individuals with meaningful causes in their communities. It streamlines the volunteer process, making it easier for people to find and engage in rewarding volunteer work.</p>
+          </div><br> 
+          
+            <div class="col-md-4">
+              <!-- Your object goes here -->
+              <br><br>
+              <img src="assets/volvon.png" alt="Your Image" height="340px">
+          </div>
         </div>
-      </div>
+          <button class="btn btn-primary rounded .mont1 " style="background-color: #CEDEBD; border-color: #CEDEBD; color:#79AC78; font-size: larger;">Lihat Aktivitas</button>
+        </div>
+    </div>
+
 
 <!--cards-->
-
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+    <br>
+    <div class="col text-center">
+      <h3 class="font-weight-bold">What Did They Say?</h3>
     </div>
-  </div>
+    <br>
+    <div class="container">
+    <br>
 
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+  <div class="row">
+      <!-- First Card -->
+      <div class="col-md-4" >
+          <div class="card">
+            <div class="card-body card-body-cascade text-center" style="background-color: #EAEFEB;">
+              <!-- Title -->
+              <h4 class="card-title" style="color: #A0BA9F;"><strong>Billy Coleman</strong></h4>
+            <!--Picture-->
+            <div class="rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; overflow: hidden;">
+              <img src="assets/people3.jpg" class="img-fluid" alt="Card Image">
+            </div>
+              <!-- Subtitle -->
+              <h6 class="font-weight-bold indigo-text py-2" style="color: #A0BA9F;">Web developer</h6>
+              <!-- Text -->
+              <p class="card-text" style="color: #A0BA9F;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae.
+                Facere modi sunt, quod quibusdam.
+              </p>
+          
+              <!-- Facebook -->
+              <a type="button" class="btn-floating btn-small btn-fb"><i style="color: #A0BA9F;" class="fab fa-facebook-f"></i></a>
+              <!-- Twitter -->
+              <a type="button" class="btn-floating btn-small btn-tw"><i style="color: #A0BA9F;" class="fab fa-twitter"></i></a>
+              <!-- Google + -->
+              <a type="button" class="btn-floating btn-small btn-dribbble"><i style="color: #8fb08e;" class="fab fa-dribbble"></i></a>
+        
+           </div>
+          </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body card-body-cascade text-center" style="background-color: #EAEFEB;">
+
+            <!-- Title -->
+            <h4 class="card-title" style="color: #A0BA9F;"><strong>Billy Coleman</strong></h4>
+            <!--Picture-->
+            <div class="rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; overflow: hidden;">
+              <img src="assets/people2.jpg" class="img-fluid" alt="Card Image">
+            </div>
+            <!-- Subtitle -->
+            <h6 class="font-weight-bold indigo-text py-2" style="color: #A0BA9F;">Web developer</h6>
+            <!-- Text -->
+            <p class="card-text" style="color: #A0BA9F;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae.
+              Facere modi sunt, quod quibusdam.
+            </p>
+        
+              <!-- Facebook -->
+              <a type="button" class="btn-floating btn-small btn-fb"><i style="color: #A0BA9F;" class="fab fa-facebook-f"></i></a>
+              <!-- Twitter -->
+              <a type="button" class="btn-floating btn-small btn-tw"><i style="color: #A0BA9F;" class="fab fa-twitter"></i></a>
+              <!-- Google + -->
+              <a type="button" class="btn-floating btn-small btn-dribbble"><i style="color: #8fb08e;" class="fab fa-dribbble"></i></a>
+        
+
+          </div>
+        </div>
     </div>
-  </div>
 
+      <!-- Third Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body card-body-cascade text-center" style="background-color: #EAEFEB;">
+
+            <!-- Title -->
+            <h4 class="card-title" style="color: #A0BA9F;"><strong>Billy Coleman</strong></h4>
+            <!--Picture-->
+            <div class="rounded-circle mx-auto mt-3" style="width: 120px; height: 120px; overflow: hidden;">
+              <img src="assets/people1.jpg" class="img-fluid" alt="Card Image">
+            </div>
+            <!-- Subtitle -->
+            <h6 class="font-weight-bold indigo-text py-2" style="color: #A0BA9F;">Web developer</h6>
+            <!-- Text -->
+            <p class="card-text"  style="color: #A0BA9F;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae.
+              Facere modi sunt, quod quibusdam.
+            </p>
+        
+              <!-- Facebook -->
+              <a type="button" class="btn-floating btn-small btn-fb"><i style="color: #A0BA9F;" class="fab fa-facebook-f"></i></a>
+              <!-- Twitter -->
+              <a type="button" class="btn-floating btn-small btn-tw"><i style="color: #A0BA9F;" class="fab fa-twitter"></i></a>
+              <!-- Google + -->
+              <a type="button" class="btn-floating btn-small btn-dribbble"><i style="color: #8fb08e;" class="fab fa-dribbble"></i></a>
+        
+          </div>
+        </div>
+    </div>
+      
+  </div>
+</div>
+
+
+<br>
+
+<!--Partner-->
+<div class="container text-center mt-5">
+  <h3 class="font-weight-bold">Partner</h3><br>
+  <div class="row">
+      <div class="col-md-4">
+          <img src="assets/logojih.png" style="width: 120px;" alt="Logo 1" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+          <img src="assets/logopyi.png" style="width: 140px;" alt="Logo 2" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+          <img src="assets/logokemensos.jpg" style="width: 180px;" alt="Logo 3" class="img-fluid">
+      </div>
+  </div>
+  <br>
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <img src="assets/logokemendikbud.png" style="width: 150px;" alt="Logo 4" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+          <img src="assets/logokemendag.jpg" style="width: 190px;" alt="Logo 5" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+          <img src="assets/logouny.png" style="width: 130px;" alt="Logo 6" class="img-fluid">
+      </div>
+  </div>
+</div>
+<br><br>
 
 
     <!-- Footer -->
